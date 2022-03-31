@@ -55,8 +55,8 @@ const SearchReceipient = ({
                             strokeWidth={.1}
                             transform="rotate(-145)"
                         />
-                        <SvgText y="50%" dx="27%">
-                            <TSpan fill={colors.inactivetext} fontSize={12} fontFamily={fonts.InterLight} x="10">tspan line 1</TSpan>
+                        <SvgText y="50%" dx="24%">
+                            <TSpan fill={colors.inactivetext} fontSize={10} fontFamily={fonts.InterLight} x="10">Adelaide Uti (son)</TSpan>
                         </SvgText>
                         <_Image
                             x="35%"
@@ -69,8 +69,8 @@ const SearchReceipient = ({
                             clipPath="url(#clip)"
 
                         />
-                        <SvgText y="50%" dx="67%">
-                            <TSpan fill={colors.inactivetext} fontSize={12} fontFamily={fonts.InterLight} x="10">tspan line 1</TSpan>
+                        <SvgText y="50%" dx="65%">
+                            <TSpan fill={colors.inactivetext} fontSize={10} fontFamily={fonts.InterLight} x="10">Adedoyin Leke</TSpan>
                         </SvgText>
                         <_Image
                             x="75%"
@@ -94,7 +94,7 @@ const SearchReceipient = ({
                             transform="rotate(-145)"
                         />
                         <SvgText y="90%" dx="12%">
-                            <TSpan fill={colors.inactivetext} fontSize={12} fontFamily={fonts.InterLight} x="10">tspan line 1</TSpan>
+                            <TSpan fill={colors.inactivetext} fontSize={10} fontFamily={fonts.InterLight} x="10">Aduni Wale</TSpan>
                         </SvgText>
                         <_Image
                             x="19%"
@@ -108,8 +108,8 @@ const SearchReceipient = ({
                             strokeWidth={2}
                             stroke={'red'}
                         />
-                        <SvgText y="97%" dx="60%">
-                            <TSpan fill={colors.activetext} fontSize={13} fontFamily={fonts.InterBold} x="10">tspan line 1</TSpan>
+                        <SvgText y="97%" dx="52%">
+                            <TSpan fill={colors.activetext} fontSize={13} fontFamily={fonts.InterRegular} x="10">Adeleke Adeyanju</TSpan>
                         </SvgText>
                         <_Image
                             x="65%"
