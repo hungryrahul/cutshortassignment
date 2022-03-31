@@ -17,4 +17,7 @@ export const colors ={
     white3:'#FFFFFF',
     pink:'#FF2E63',
     gray:'#1DC7AC',
+    circlestroke:'#C4C4C4',
+    inactivetext:'#FAFAFA',
+    activetext:'#1DC76B'
 }

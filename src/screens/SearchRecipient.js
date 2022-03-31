@@ -12,8 +12,11 @@ import { fonts } from '../utilities/fonts';
 import { images } from '../utilities/images';
 import { commanstyles } from '../utilities/style';
 import DragToolTip from './dragtooltip';
-
+import { Circle, Text as SvgText, TextPath, TSpan, G, Svg, Image as _Image }
+    from 'react-native-svg';
 import CustomModal from '../component/CustomModal';
+
+
 const SearchReceipient = ({
     params, navigation
 }) => {
@@ -23,14 +26,115 @@ const SearchReceipient = ({
         <MainWrapper style={style.maincontainer}>
             {/* ============================================= HEADER ======================================  */}
             <View style={{ flex: 1 }}>
-                <Header leftpress={()=>navigation.pop()} icon={true} right={false} left={true} lefttext='Back' input={true} />
+                <Header leftpress={() => navigation.pop()} icon={true} right={false} left={true} lefttext='Back' input={true} />
             </View>
             {/* ============================================= MIDDLE AMOOUNT VIEW ======================================  */}
-            <View style={{ flex: 3, paddingHorizontal: 10, justifyContent: 'space-evenly' }}>
+            <View style={{ flex: 3.5, alignItems: 'center', justifyContent: 'flex-end' }}>
+
+                <Svg position="absolute" height="100%" width="100%" color={'yellow'}
+                    viewBox="0 30 300 300">
+
+                    <G id="circle">
+                        <Circle
+                            r={145}
+                            x={150}
+                            y={176}
+                            fill="none"
+                            stroke={colors.circlestroke}
+                            strokeWidth={.1}
+                            transform="rotate(-145)"
+                        />
+                    </G>
+                    <G id="circle1">
+                        <Circle
+                            r={105}
+                            x={150}
+                            y={176}
+                            fill="none"
+                            stroke={colors.circlestroke}
+                            strokeWidth={.1}
+                            transform="rotate(-145)"
+                        />
+                        <SvgText y="50%" dx="27%">
+                            <TSpan fill={colors.inactivetext} fontSize={12} fontFamily={fonts.InterLight} x="10">tspan line 1</TSpan>
+                        </SvgText>
+                        <_Image
+                            x="35%"
+                            y="35%"
+                            width={30}
+                            height={30}
+                            preserveAspectRatio="xMidYMid slice"
+                            opacity={1}
+                            href={images.person4}
+                            clipPath="url(#clip)"
+
+                        />
+                        <SvgText y="50%" dx="67%">
+                            <TSpan fill={colors.inactivetext} fontSize={12} fontFamily={fonts.InterLight} x="10">tspan line 1</TSpan>
+                        </SvgText>
+                        <_Image
+                            x="75%"
+                            y="35%"
+                            width={30}
+                            height={30}
+                            preserveAspectRatio="xMidYMid slice"
+                            opacity={1}
+                            href={images.person3}
+                            clipPath="url(#clip)"
+                        />
+                    </G>
+                    <G id="circle2">
+                        <Circle
+                            r={65}
+                            x={150}
+                            y={176}
+                            fill="none"
+                            stroke={colors.circlestroke}
+                            strokeWidth={.1}
+                            transform="rotate(-145)"
+                        />
+                        <SvgText y="90%" dx="12%">
+                            <TSpan fill={colors.inactivetext} fontSize={12} fontFamily={fonts.InterLight} x="10">tspan line 1</TSpan>
+                        </SvgText>
+                        <_Image
+                            x="19%"
+                            y="75%"
+                            width={30}
+                            height={30}
+                            preserveAspectRatio="xMidYMid slice"
+                            opacity={1}
+                            href={images.person2}
+                            clipPath="url(#clip)"
+                            strokeWidth={2}
+                            stroke={'red'}
+                        />
+                        <SvgText y="97%" dx="60%">
+                            <TSpan fill={colors.activetext} fontSize={13} fontFamily={fonts.InterBold} x="10">tspan line 1</TSpan>
+                        </SvgText>
+                        <_Image
+                            x="65%"
+                            y="75%"
+                            width={50}
+                            height={50}
+                            preserveAspectRatio="xMidYMid slice"
+                            opacity={1}
+                            href={images.person1}
+                            clipPath="url(#clip)"
+                        />
+                    </G>
+                    {/*                     
+                    <Image
+                        style={{
+                            height: 30, width: 30, borderRadius: 60,
+                      
+                        }}
+                        source={images.person1}
+                    /> */}
+                </Svg>
 
             </View>
             {/* ============================================= BOTTOM LIST VIEW ======================================  */}
-            <View style={{ flex: 3 }}>
+            <View style={{ flex: 2.5 }}>
                 <View style={style.listview}>
                     <View style={{ flex: .2, alignItems: 'center', justifyContent: 'center' }}>
                         <DragToolTip />
